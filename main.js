@@ -13,7 +13,6 @@ const puppeteer = require('puppeteer');
 
     const sortButton = '#a-autoid-0-announce';
     const sortByPrice = '#s-result-sort-select_1';
-    const addToCart = '#a-autoid-3-announce';
 
     await page.waitForSelector(sortButton);
     await page.click(sortButton);
