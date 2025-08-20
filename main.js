@@ -17,6 +17,8 @@ const puppeteer = require('puppeteer');
     await page.waitForSelector(sortButton);
     await page.click(sortButton);
 
+    await new Promise(res => setTimeout(res, 2000));
+
     await page.waitForSelector(sortByPrice);
     await page.click(sortByPrice);
 
